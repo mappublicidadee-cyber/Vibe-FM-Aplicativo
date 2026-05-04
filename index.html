@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baixe o App</title>
+  <script>
+    (function() {
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      var isIOS = /iPad|iPhone|iPod/.test(ua) && !window.MSStream;
+      var isAndroid = /android/i.test(ua);
+
+      if (isIOS) {
+        window.location.href = "https://apps.apple.com/br/app/rede-vibe-fm/id6760476017";
+      } else if (isAndroid) {
+        window.location.href = "https://play.google.com/store/apps/details?id=br.com.radioapp.vibe89fm";
+      } else {
+        window.location.href = "https://seusite.com.br";
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p style="font-family:sans-serif;text-align:center;padding:2rem;">
+    Redirecionando para o app...<br>
+    <a href="https://seusite.com.br">Clique aqui se não for redirecionado</a>
+  </p>
+</body>
+</html>
