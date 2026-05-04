@@ -3,7 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Baixe o App</title>
+  <title>Vibe FM - Baixe o App</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #0d0d0d;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+    p { color: #aaa; font-size: 15px; }
+    a { color: #e05; text-decoration: none; }
+  </style>
   <script>
     (function() {
       var ua = navigator.userAgent || navigator.vendor || window.opera;
@@ -14,16 +31,19 @@
         window.location.href = "https://apps.apple.com/br/app/rede-vibe-fm/id6760476017";
       } else if (isAndroid) {
         window.location.href = "https://play.google.com/store/apps/details?id=br.com.radioapp.vibe89fm";
-      } else {
-        window.location.href = "https://seusite.com.br";
       }
     })();
   </script>
 </head>
 <body>
-  <p style="font-family:sans-serif;text-align:center;padding:2rem;">
-    Redirecionando para o app...<br>
-    <a href="https://seusite.com.br">Clique aqui se não for redirecionado</a>
-  </p>
+  <div>
+    <h2>Redirecionando para o app Vibe FM...</h2>
+    <p>Se não for redirecionado automaticamente, escolha sua loja:</p>
+    <p>
+      <a href="https://apps.apple.com/br/app/rede-vibe-fm/id6760476017">App Store (iOS)</a>
+      &nbsp;&nbsp;|&nbsp;&nbsp;
+      <a href="https://play.google.com/store/apps/details?id=br.com.radioapp.vibe89fm">Play Store (Android)</a>
+    </p>
+  </div>
 </body>
 </html>
